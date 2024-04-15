@@ -3,7 +3,7 @@
     <parent>
         <groupId>my.edu</groupId>
         <artifactId>my-pet-clinic-2024</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <artifactId>pet-clinic-web</artifactId>
     <name>Archetype - pet-clinic-web</name>
@@ -12,7 +12,7 @@
         <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>my.edu</groupId>
-            <version>0.0.1</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
