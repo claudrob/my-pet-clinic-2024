@@ -1,27 +1,23 @@
 package my.edu.mypetclinic2024.bootstrap;
 
-import my.edu.mypetclinic.model.Owner;
-import my.edu.mypetclinic.model.Pet;
-import my.edu.mypetclinic.model.Vet;
-import my.edu.mypetclinic.services.OwnerService;
-import my.edu.mypetclinic.services.VetService;
-import my.edu.mypetclinic.services.map.OwnerServiceMap;
-import my.edu.mypetclinic.services.map.VetServiceMap;
+import my.edu.mypetclinic2024.model.Owner;
+import my.edu.mypetclinic2024.model.Vet;
+import my.edu.mypetclinic2024.services.OwnerService;
+import my.edu.mypetclinic2024.services.VetService;
+import my.edu.mypetclinic2024.services.map.OwnerServiceMap;
+import my.edu.mypetclinic2024.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
-
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

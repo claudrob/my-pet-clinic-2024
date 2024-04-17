@@ -1,4 +1,4 @@
-package my.edu.mypetclinic.model;
+package my.edu.mypetclinic2024.model;
 
 public class PetType extends BaseEntity {
 

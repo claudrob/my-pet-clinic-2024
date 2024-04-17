@@ -1,8 +1,6 @@
-package my.edu.mypetclinic.services;
+package my.edu.mypetclinic2024.services;
 
-import my.edu.mypetclinic.model.Owner;
-
-import java.util.Set;
+import my.edu.mypetclinic2024.model.Owner;
 
 public interface OwnerService  extends CrudService<Owner, Long>{
     Owner findByLastName(String lastName);
