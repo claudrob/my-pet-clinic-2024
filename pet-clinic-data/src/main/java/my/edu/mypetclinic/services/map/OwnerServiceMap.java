@@ -1,15 +1,18 @@
 package my.edu.mypetclinic.services.map;
 
 import my.edu.mypetclinic.model.Owner;
-import my.edu.mypetclinic.services.CrudService;
-import org.springframework.stereotype.Service;
+import my.edu.mypetclinic.services.OwnerService;
 
-import java.util.List;
 import java.util.Set;
 
 
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Owner> findAll() {
