@@ -34,9 +34,6 @@ public class DataLoader implements CommandLineRunner {
             loadData();
         }
 
-
-
-
     }
 
     private void loadData() {
