@@ -6,8 +6,8 @@ import lombok.*;
 
 @Setter
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @MappedSuperclass
 public class Person extends BaseEntity{
 
@@ -24,3 +24,4 @@ public class Person extends BaseEntity{
     private String lastName;
 
 }
+
